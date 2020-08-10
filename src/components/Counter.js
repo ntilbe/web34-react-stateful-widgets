@@ -27,22 +27,22 @@ DONE STEP 2:
   What the value of 'color' should be instead is a ternary expression that goes like this:
   If count is even, then "royalblue", else "crimson".
 
-STEP 3:
+DONE STEP 3:
   We need to replace some hard-coded info in the JSX with expressions, interpolated inside curly brackets.
   Start by replacing the character "0" with {count}. The 'count' slice of state is the source of truth here.
   Then, replace the word "even" with a ternary: {if count is even number, then string "even", else string "odd"}.
 
-STEP 4:
+DONE STEP 4:
   This click handler needs to use 'setCount' to schedule the 'count' to become the current 'count' plus one.
   These state changes are not synchronous: the updated count arrives on the next run of the Counter component.
   Do NOT simply do count++. The plus plus is forbidden! We never mutate a slice of state in place. Even if you could
   reassign a const, React would not be aware anything changed. Always use the state updater, passing in a new value.
 
-STEP 5:
+DONE STEP 5:
   This click handler needs to use 'setCount' to set the 'count' to be the current 'count' minus one.
   Do NOT do count--. That amounts to trying to mutate 'count' in place. This is the road to perdition.
 
-STEP 6:
+DONE STEP 6:
   This click handler needs to use 'setCount' to set the 'count' to be the initial number you chose.
 */
 
