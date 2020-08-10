@@ -54,25 +54,28 @@ export default function Counter() {
 
   const increment = () => {
     /* STEP 4 */
-    setCount(1)
+    setCount(count + 1)
   };
   const decrement = () => {
     /* STEP 5 */
+    setCount(count - 1)
   };
   const reset = () => {
     /* STEP 6 */
+    setCount(0)
   };
 
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: count % 2 ? 'royalblue': 'crimson', /* STEP 2 */
+    color: count % 2 === 0 ? 'royalblue': 'crimson', /* STEP 2 */
   };
 
   return (
     <div className='widget-counter container'>
       <h2>Counter</h2>
-      <div style={style}>Number {count} is { count % 2 ? 'even' : 'odd'}</div> {/* STEP 3 */}
+      {/* number < 2 ? 'red' : 'blue' - think of the question mark as the if and the colon as the else */}
+      <div style={style}>Number {count} is { count % 2 === 0 ? 'even' : 'odd'}</div> {/* STEP 3 */}
       <div>
         <button onClick={increment}>Increment</button>
         <button onClick={decrement}>Decrement</button>
