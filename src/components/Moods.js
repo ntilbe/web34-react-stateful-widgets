@@ -21,10 +21,10 @@ DONE STEP 1:
 DONE STEP 2:
   Make the color of the text be royalblue if the state of the mood is happy, crimson otherwise.
 
-STEP 3:
+DONE STEP 3:
   Remove the hard-coded mood and interpolate the 'mood' slice of state instead, using curly brackets.
 
-STEPS 4, 5, 6:
+DONE STEPS 4, 5, 6:
   Inside these click handlers set the correct mood, using 'setMood' and the variables below the imports.
 */
 
